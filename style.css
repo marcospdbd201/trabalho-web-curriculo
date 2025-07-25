@@ -1,0 +1,139 @@
+body{
+    font-family:'Arial', sans-serif;
+    padding-top: 2%;
+    background-color:#f1eeec;
+    color:#1d1ab3;
+    margin:0;
+    line-height:1.6 ;
+}
+nav{
+    position:sticky;
+    top:0;
+    background-color:#5701e2;
+    padding: 1em 0;
+    z-index: 1000;
+}
+nav ul{
+    display:flex;
+    justify-content:space-around;
+    list-style:none;
+    margin:0;
+    padding:0;
+    flex-wrap: wrap;
+    
+}
+nav li{
+   margin: 0 1em;
+}
+nav a{
+    color:#ecece5;
+    text-decoration: none;
+    font-weight:bold;
+ 
+}
+nav a:hover{
+    color: #c70e0e;
+}
+.conteudo{
+    max-width: 900px;
+    margin:2em auto;
+    padding:1em;
+    background-color:#E0D68A;
+    border-radius:10px;
+    box-shadow:0 4px 10px #320A28
+}
+.cabecallho{
+    display:grid;
+    grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d";
+}
+.cabecalho h1{
+    font-family:'Georgia', serif;
+    margin-bottom:0.3em;
+    color:#8e443d;
+    grid-area:a;
+}
+img{
+    width: 150px;
+    height: auto;
+    border-radius:50%;
+    margin: 1em 0;
+    grid-area:b;
+}
+.dados{
+    grid-area:d;
+}
+.apresentacao{
+    padding:1em;
+    background-color: #E0D68A;
+    border-left:5px solid #511730;
+    margin-top:1.5em;
+    border-radius:5px;
+    grid-area:c;
+}
+h2{
+    font-family: 'Georgia', serif;
+    color: #8e443d;
+    border-bottom: 2px solid #8e443d;
+    padding-bottom: 0.5em;
+}
+h3{
+    color:#320A28;
+    margin-bottom:0.3em;
+}
+ul{
+    padding-left:1.5em;
+}
+
+section{
+    margin-top:3em;
+}
+footer{
+    background-color:#320A28;
+    color:#E0D68A;
+    text-align:center;
+    padding:1.5em 0;
+    margin-top:3em;
+}
+footer ul{
+    list-style:none;
+    padding:0;
+    margin-bottom:1em;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+footer li{
+    margin:0 1em;
+}
+footer a{
+    color: #E0D68A;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #911307;
+}
+ 
+@media (max-width: 768px) {
+    .navegacao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacao li {
+        margin: 0.5em 0;
+    }
+}
+
+/*
+font-family:'Arial', sans-serif;
+font-family:'Georgia', serif;
+cor-1:#320A28;
+cor-2:#511730;
+cor-3:#8E443D;
+cor-4:#CB9173;
+cor-3:#E0D68A.
+*/
